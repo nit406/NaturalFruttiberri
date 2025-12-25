@@ -8,7 +8,7 @@ function loadHeader() {
                 <ul class="nav-links">
                     <li><a href="index.html" id="nav-about">About Us</a></li>
 					<li><a href="icecream.html" id="nav-home">Ice Cream</a></li>
-					<li><a href="Froyo.html" id="nav-froyo">Frozen Yogurt</a></li>
+					<li><a href="froyo.html" id="nav-froyo">Frozen Yogurt</a></li>
 					<li><a href="beverages.html" id="nav-beverages">Beverages</a></li>
 					<li><a href="soup.html" id="nav-soup">Soups</a></li>
 					<li><a href="catering.html" id="nav-catering">Catering</a></li>
@@ -55,7 +55,7 @@ function highlightActiveNav() {
 	} 
 	else if (currentPage === 'contact.html') { document.getElementById('nav-contact')?.classList.add('active');
     }
-	else if (currentPage === 'Froyo.html') { document.getElementById('nav-froyo')?.classList.add('active');
+	else if (currentPage === 'froyo.html') { document.getElementById('nav-froyo')?.classList.add('active');
 	}
 	else if (currentPage === 'soup.html') { document.getElementById('nav-soup')?.classList.add('active');
 		}
