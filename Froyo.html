@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Fruttiberri Frozen Yogurts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+       <div class = "TestRotator">
+<img src="images/AllCone.png" width='200' height='250' alt="rotating" id="rotator1">
+<img src="images/CookieAndCream.png" width='200' height='250' alt="rotating" id="rotator2">
+<img src="images/Pomegranate.png" width='200' height='250' alt="rotating" id="rotator3">
+<img src="images/Saffron.png" width='200' height='250' alt="rotating" id="rotator4">
+<img src="images/Vanilla.png" width='200' height='250' alt="rotating" id="rotator5">
+<img src="images/Pistachio.png" width='200' height='250' alt="rotating" id="rotator6">
+<img src="images/strawberry.png" width='200' height='250' alt="rotating" id="rotator7">
+<script type="text/javascript">
+(function () {
+    var rotator1 = document.getElementById('rotator1');
+    var rotator2 = document.getElementById('rotator2');
+    var rotator3 = document.getElementById('rotator3'); 
+    var rotator4 = document.getElementById('rotator4'); 
+    var rotator5 = document.getElementById('rotator5'); 
+    var rotator6 = document.getElementById('rotator6'); 
+    var rotator7 = document.getElementById('rotator7'); 
+    // change to match image ID
+    var imageDir = 'images/';
+    var delayInSeconds = 5;
+    // set number of seconds delay
+    // list image names
+    var images = ['Saffron.png','Cone.png','CookieAndCream.png'];
+    var images1 = ['VanillaCholateSyrup.png','Pomegranate.png','Pistachio.png'];
+    var images2= ['AllCone.png','Saffron.png','strawberry.png'];
+    var images3 = ['CookieAndCream.png','Pistachio.png','Pomegranate.png'];
+    var images4 = ['Pomegranate.png','CookieAndCream.png','Cone.png'];
+    var images5 = ['Pistachio.png','strawberry.png','Vanilla.png'];
+    var images6 = ['strawberry.png','SaffronNCookieCream.png','saffron.png'];
+   
+    var num = 0;
+    var changeImage = function () {
+        var len = images.length;
+        rotator1.src = imageDir + images[num];
+        
+        rotator2.src = imageDir + images1[num];
+        
+        rotator3.src = imageDir + images2[num];
+        
+        rotator4.src = imageDir + images3[num];
+        
+        rotator5.src = imageDir + images4[num];
+        rotator6.src = imageDir + images5[num];
+        rotator7.src = imageDir + images6[num];
+        num++;
+        if (num == len) {
+            num = 0;
+        }
+    };
+    setInterval(changeImage, delayInSeconds*1000 );
+})();
+</script>
+</div>
+    </section>
+
+    <!-- Flavors Section -->
+    <section class="section">
+        <h2 class="section-title">Our Signature Flavors</h2>
+        <div class="flavors-grid">
+            <div class="flavor-card">
+                <div class="flavor-icon"></div>
+                <h3>Vanilla</h3>
+                <p>Ingredients:  Milk, Yogurt, Vanilla, Fruit Sugar, Non-Hydrated Coconut Oil, Extra Grade Whey, Whey Proteins concentrate, Gum, Maltodextrin, Citric Acid</p>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-icon"></div>
+                <h3>Raspberry Lemon</h3>
+                <p>Ingredients: Milk, Yogurt, Raspberries, Lemon Juice, Fruit Sugar, Extra Grade Whey, Whey Proteins concentrate, Gum, Maltodextrin, Citric Acid</p>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-icon"></div>
+                <h3>Cookie Cream</h3>
+                <p>Ingredients:  Milk, Yogurt, Oreo, Non-Hydrated Coconut Oil, Fruit Sugar, Extra Grade Whey, Whey Proteins concentrate, Gum, Maltodextrin, Citric Acid</p>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-icon"></div>
+                <h3>Chocolate</h3>
+                <p>Ingredients:  Milk, Yogurt, Cocoa, Fruit Sugar, Extra Grade Whey, Whey Proteins concentrate, Gum, Maltodextrin</p>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-icon"></div>
+                <h3>Coconut Taro</h3>
+                <p>Ingredients:  Milk, Coconut , Coconut Flour, Taro, Butter, Walnut, Almond, Yogurt, Non-Hydrated Coconut Oil, Fruit Sugar, Extra Grade Whey, Whey Proteins concentrate, Gum, Maltodextrin, Citric Acid </p>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-icon"></div>
+                <h3>Mango Peach</h3>
+                <p>Ingredients:  Milk, Mango, Peach, Yogurt, Non-Hydrated Coconut Oil, Fruit Sugar, Extra Grade Whey, Whey Proteins</p>
+            </div>
+             <div class="flavor-card">
+                <div class="flavor-icon"></div>
+                <h3>Original Tart</h3>
+                <p>Ingredients: Milk, Yogurt, Fruit Sugar, Xanthan gum, Cellulose gum, Guar gum, Maltodextrin, Citric Acid</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load Components -->
+    <script src="components.js"></script>
+</body>
+</html>
